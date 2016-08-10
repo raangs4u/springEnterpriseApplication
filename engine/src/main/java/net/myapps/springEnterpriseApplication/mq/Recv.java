@@ -15,6 +15,8 @@ public class Recv {
     public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
+        factory.setUsername("ipsoft");
+        factory.setPassword("ipsoft");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
 
